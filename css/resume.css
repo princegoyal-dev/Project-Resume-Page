@@ -1,0 +1,569 @@
+#header-body{
+    background-image: url("../static/headerBackground.jpg");
+    height: 50vh;
+    background-attachment:fixed;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    margin: -8px -8px 0px -8px;
+    overflow: hidden;
+}
+
+/* header nav styling */
+/* .header-nav{
+    position: sticky;
+} */
+
+.header-nav ul{
+    background-color: #413f04c9;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+
+.header-nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    font-family: cursive;
+    font-size: 1rem;
+    margin: 0.75rem 1.5rem;
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-nav ul li:hover{
+    color: white;
+    transition: color 0.5s;
+    background-color: #ffc70880;
+    transition: background-color 1s ;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 0px 1rem;
+}
+/* header nav styling end */
+
+
+.text-center{
+    text-align: center;
+}
+
+/* header social nav styling */
+.header-social-nav ul{
+    background-color: #695c04;
+    width: 18rem;
+    margin: auto;
+    border-radius: 25px;
+    padding: 0.5rem 0.25rem;
+    margin-top: 5px;    
+}
+
+.header-social-nav ul li img{
+    width: 2.5vw;
+    min-width: 2rem;
+}
+
+.header-social-nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.25rem 0.25rem;
+}
+/* header social media styling end */
+
+/* header person name */
+#header-body h1{
+    display: block;
+    background-color: #695c04;
+    color: white;
+    font-family: cursive;
+    /* margin-left: 35vw; */
+    width: 20rem;
+    margin: auto;
+    font-size:3rem;
+    border-radius: 25px;
+    padding: 0.20rem 0.25rem;
+    margin-top: 10vh;
+}
+/* hader person name end */
+
+/* tooltip styling */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #ffc60a;
+    color: #413f04c9;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    border: 2px solid #413f04c9;
+    font-weight: 700;
+    font-size: 1em;
+}
+/* tooltip styling end */
+
+/* mypic style */
+#about #mypic img{
+    width: 12rem;
+    border-radius: 100rem;
+    position: relative;
+    top: -2vh;
+    box-shadow: 1px -1px 42px blue;
+}
+/* end */
+
+/* about style */
+main #about{
+    min-height: 30vh;
+}
+main #about #about-me p{
+    font-size: 20px;
+    margin-top: auto;
+    font-family: cursive;
+    overflow: hidden;
+    color: rgb(88, 88, 88);
+}
+/* end */
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+/* main section background color */
+section:nth-child(2n-1){
+    background-color: white;
+    margin-bottom: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: auto;
+
+}
+
+section:nth-child(2n){
+    background-color: #e3e9e875;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: auto;
+}
+/* end */
+
+/* section skills */
+
+#skills{
+    display: flex;
+    width: 98%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1%;
+}
+
+/* title styling for every section*/
+.title span{
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #1a486e;
+    margin: 10px 10px 10px 0px;
+}
+
+/* common styling for skill set */
+#skill-set{
+    margin-top: 1rem;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+@media only screen and (max-width:800px){
+    #skill-set{
+        width: 100%;
+
+    }
+}
+
+#skill-set .skill-item{
+    height: 3rem;
+    width: 12rem;
+    border-radius: 16px;
+    background-color: #0000005c;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+#skills #skill-set .skill-item div span{
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: 700;
+    margin: 10px;
+    padding: auto;
+}
+/* end */
+
+/* skill styling for skill 1 */
+#skill-1{
+    height: inherit;
+    padding-top: 10px;
+    border-radius: 16px 0px 0px 16px;
+    width: 70%;
+    background-color: rgb(255 10 241 / 62%);
+}
+/* end */
+
+/* styling for skill set 2 */
+#skill-2{
+    height: inherit;
+    padding-top: 10px;
+    border-radius: 16px 0px 0px 16px;
+    width: 85%;
+    background-color: rgb(10 90 255 / 62%);
+}
+/* end */
+
+/* styling for skill set 3 */
+#skill-3{
+    height: inherit;
+    padding-top: 10px;
+    border-radius: 16px 0px 0px 16px;
+    width: 75%;
+    background-color: rgb(255 197 5);
+}
+/* end */
+
+
+/* styling for skill set 4 */
+#skill-4{
+    height: inherit;
+    padding-top: 10px;
+    border-radius: 16px 0px 0px 16px;
+    width: 55%;
+    background-color: #ff5722;
+}
+/* end */
+
+
+/* styling for skill set 5 */
+#skill-5{
+    height: inherit;
+    padding-top: 10px;
+    border-radius: 16px 0px 0px 16px;
+    width: 75%;
+    background-color: #81ff3b;
+}
+/* end */
+
+
+/* styling for skill set 2 */
+#skill-6{
+    height: inherit;
+    padding-top: 10px;
+    border-radius: 16px 0px 0px 16px;
+    width: 75%;
+    background-color: rgb(10 255 148 / 62%);
+}
+/* end */
+
+
+/* styling for skill set 7 */
+#skill-7{
+    height: inherit;
+    padding-top: 10px;
+    border-radius: 16px 0px 0px 16px;
+    width: 50%;
+    background-color: rgb(255 10 10 / 61%);
+}
+/* end */
+
+
+/* styling for skill set 8 */
+#skill-8{
+    height: inherit;
+    padding-top: 10px;
+    border-radius: 16px 0px 0px 16px;
+    width: 75%;
+    background-color: rgb(10 169 255 / 56%);
+}
+/* end */
+
+
+/* Section education */
+/* outer container styling */
+.outer-block{
+    position: relative;
+    height: auto;
+    width: 70%;
+    margin-top: 2rem;
+    margin-left: 15%;
+    /* border: 2px solid black; */
+}
+
+/* inner-block of container */
+.inner-block{
+    position: relative;
+    height: auto;
+    width:35%;
+    /* border: 2px solid black; */
+    margin: 2vw 2vw;
+    margin-left: 5%;
+    /* box-shadow: -1px 1px 25px #ffee00; */
+    border-radius: 10%;
+}
+
+/* Dot in the center after every inner box */
+.inner-block:nth-child(2n+1)::after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: #1a486e;
+    border-radius: 50%;
+    position: absolute;
+    left: 115%;
+    top: 41%;
+}
+
+.inner-block:nth-child(2n)::after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: #1a486e;
+    border-radius: 50%;
+    position: absolute;
+    right: 115%;
+    top: 40%;
+
+}
+
+/* even blocks have left margin to show on the right side */
+.inner-block:nth-child(2n){
+    margin-left: 60%;
+}
+
+/* container for outer divider line hidden  */
+.inner-block-divider{
+    position:absolute;
+    height: 80%;
+    width:100px;
+    border: 1px dashed transparent;
+    top: 10%;
+    left: 50%;
+}
+
+/* dashed line repersenting in between the inner blocks */
+.inner-divider{
+    position: absolute;
+    height: 98%;
+    width: 0px;
+    border: 1px dashed black;
+    
+}
+
+/* arrow icon on the divider */
+.divider-pointer{
+    position: sticky;
+    top: 40%;
+    font-size:44.5px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    display: inline-block; /* Default display for icon is block */
+    border-radius: 50%;     /*To make the icon in circle*/
+    margin-left: -22%;
+    color: #1a486e;
+}
+@media only screen and (max-width:700px){
+    .inner-block-divider{
+        left: 12% !important;
+    }
+    .inner-block{
+        width: 80%;
+        margin-left: 20% !important;
+        margin-bottom: 10%;
+        border-bottom: 1px solid black;
+    }
+    .inner-block::after{
+        left: -11.5% !important;
+        z-index: -1;
+    }
+    /* .divider-pointer{
+        z-index: 10;
+    } */
+}
+
+.inner-block p{
+    font-family: cursive;
+    font-size:calc(10px + 0.25vw);
+    font-weight: 700;
+    margin-top: 1%;
+    color: #ff9900;
+}
+.inner-block span{
+    font-size:calc(10px + 0.25vw);
+    font-weight: 700;
+}
+
+.inner-block p:first-child{
+    font-weight: 700;
+    font-size:calc(12px + 0.5vw);
+    color: #1a486e;
+    /* code for font stroke */
+    /* -webkit-text-stroke: 1px ;
+    -webkit-text-stroke-color: black; */
+}
+.inner-block div{
+    font-size: 12px;
+}
+
+/* Section Portfolio */
+/* providing more margin to the title base */
+#portfolio .title{
+    margin-bottom: 20px;
+}
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    margin-left: 1%;
+    height: auto;
+}
+#portfolio-block{
+    margin-top: 1rem;
+    width: 90%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+.inner-portfolio-block{
+    height:30vh;
+    width: 20%;
+    min-width: 250px;
+    border: 2px solid black;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+/* section contact us */
+/* overall container for contactform section */
+#contactus-container{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(45deg, #800080c4, #0000ffc9);
+}
+/* contactform title div styling */
+#contactform-title{
+    margin-top: 0px;
+    padding: 40px;
+}
+/* contact form title text styling */
+#contactform-title span{
+    color: white;
+    color: white;
+    font-weight: 600;
+    margin-right: -2px;
+    font-size: 50px;
+}
+/* form */
+#contact-form{
+    display: inline-block;
+    padding: 25px;
+}
+/* label styling linked to input fields */
+/* #contact-form label{
+    font-size: 20px ;
+    color: white;
+    font-weight: 700;
+    font-family: cursive;
+} */
+
+/* styling for form input fields */
+.contactus-input{
+    color: white;
+    font-size: 20px;
+    height: auto;
+    width: 40vw;
+    min-width: 400px;
+    margin-bottom: 10%;
+    background-color: transparent;
+    border: hidden;
+    border-bottom: 2px solid white;
+}
+.contactus-input:focus{
+    outline: none;
+}
+
+::placeholder{
+    font-family: cursive;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+
+/* end */
+
+/* footer contact form */
+
+/* outer div for submit button for alignment purpose*/
+#contact-form div{
+    text-align: center;
+}
+
+/* submit button styling  */
+#contactus-submit{
+    width: 40%;
+    height: 10%;
+    border-radius: 5%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* hover pseudo styling for contact form submit button */
+#contactus-submit:hover{
+    background-color: rgba(211, 211, 211, 0.25);
+}
+/* footer contact form styling end */
+
+/* footer quote by gaur gopal das */
+#footer-quote{
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+/* author name stling in footer quote */
+#footer-quote span{
+    color: red;
+}
+/* footer quote styling end */
